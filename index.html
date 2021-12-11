@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Brasil</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontsawesome-web/css/all.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="assets/logo.png" alt="logo" draggable="false"></a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li> 
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My list</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="assets/bg.jpg" class="bg">
+
+        <div class="content">
+            <img src="assets/name.png" class="movieTitle">
+            <h4>
+                <span>2020</span>
+                <span><i>12+</i></span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum reprehenderit pariatur quia magni harum, animi deserunt neque, commodi aspernatur officiis dolores impedit veniam! Reprehenderit autem fugit rem eaque quasi fugiat?</p>
+            <div class="buttons">
+                <a href="#"><i class="fa fa-play" aria-hidden='true'>Play</i></a>
+                <a href="#"><i class="fa fa-plus" aria-hidden='true'>My list</i></a>
+            </div>
+        </div>
+        <a class="play" onclick="toggleVideo()"><img src="assets/play.png">Watch Trailer</a>
+    </div>
+
+    <div class="trailer">
+        <iframe width="876" height="364" src="https://www.youtube.com/embed/KK8FHdFluOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="assets/close.png" class="close" onclick="toggleVideo()">
+    </div>
+    
+</body>
+    <script src="src/script.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>    
+</html>
